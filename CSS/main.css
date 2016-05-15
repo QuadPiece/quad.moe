@@ -1,8 +1,13 @@
+html {
+    min-height: 100vh;
+}
+
 body {
     margin: 0;
     background-color: #1e1e1e;
     color: #FFF;
-    font-family: sans-serif;
+    font-family: 'Lato', sans-serif;
+    min-height: 100%;
 }
 
 /* Reset that fuck*/
@@ -32,7 +37,7 @@ a:hover {
 
 #site {
     width: 100%;
-    max-width: 720px;
+    max-width: 560px;
     box-sizing: border-box;
     padding: 90px 25px 10px 25px;
     margin-left: auto;
@@ -61,12 +66,19 @@ a:hover {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    font-size: 26pt;
+    font-size: 32pt;
     text-align: center;
 }
 
 .blocks a {
     display: inline-block;
-    padding: 5px;
-    margin: 5px;
+    padding: 10px;
+    width: 25%;
+}
+
+.corner {
+    color: #333;
+    position: absolute;
+    left: 5px;
+    bottom: 5px;
 }
