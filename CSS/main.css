@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    background-color: #1e1e1e;
+    color: #FFF;
+    font-family: sans-serif;
+}
+
+/* Reset that fuck*/
+p, h1, h2, h3, h4, h5, h6 {margin: 0;}
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+p {
+    margin: 5px 0 5px 0;
+}
+
+a, a:visited {
+    color: #FFF;
+    text-decoration: unerline;
+    transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+    color: #FA1;
+}
+
+#site {
+    width: 100%;
+    max-width: 720px;
+    box-sizing: border-box;
+    padding: 90px 25px 10px 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 230%;
+    font-weight: 300;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+.imgblock {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    display: block;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
+    margin: 10px auto 25px auto;
+    box-sizing: border-box;
+}
+
+.blocks {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 26pt;
+    text-align: center;
+}
+
+.blocks a {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
