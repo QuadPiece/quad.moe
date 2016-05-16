@@ -75,13 +75,25 @@ a:hover {
     padding: 10px;
     width: 20%;
     font-size: 32pt;
+    box-sizing: border-box;
     text-align: center;
 }
 
 .blocks .avatar {
-    width: 100px;
-    height: 100px;
-    display: static;
+    width: 90%;
+    height: auto;
+    display: inline-block;
+}
+
+@media screen and (max-width: 580px) {
+    .blocks a {
+        width: 45%;
+        font-size: 26pt;
+    }
+
+    .blocks .avatar {
+        max-width: 100px;
+    }
 }
 
 .corner {
