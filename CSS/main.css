@@ -82,3 +82,12 @@ a:hover {
     left: 5px;
     bottom: 5px;
 }
+
+.subtle {
+    color: #AAA;
+    font-size: 75%;
+}
+
+.centered {
+    text-align: center;
+}
