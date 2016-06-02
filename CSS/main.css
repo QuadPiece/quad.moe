@@ -35,6 +35,10 @@ a:hover {
     color: #FA1;
 }
 
+.blocks a, .blocks a:visited {
+    text-decoration: none;
+}
+
 #site {
     width: 100%;
     max-width: 560px;
@@ -114,4 +118,8 @@ a:hover {
 
 .small {
     font-size: 50%;
+}
+
+.exsmall {
+    font-size: 30%;
 }
