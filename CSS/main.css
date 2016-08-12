@@ -2,6 +2,36 @@ html {
     min-height: 100vh;
 }
 
+/* Kill me please, this will be bad */
+
+@keyframes glitch {
+    0% {left: 0px; opacity: 0;}
+    48% {left: 0px; opacity: 0;}
+    49% {left: 20px; opacity: 1;}
+    50% {left: -10px; opacity: 1;}
+    51% {left: 5px; opacity: 1;}
+    52% {left: 0px; opacity: 0;}
+    71% {left: 0px; opacity: 0;}
+    72% {left: -10px; opacity: 1;}
+    73% {left: 0px; opacity: 0;}
+    100% {left: 0px; opacity: 0;}
+}
+
+@-webkit-keyframes glitch {
+    0% {left: 0px; opacity: 0;}
+    48% {left: 0px; opacity: 0;}
+    49% {left: 20px; opacity: 1;}
+    50% {left: -10px; opacity: 1;}
+    51% {left: 5px; opacity: 1;}
+    52% {left: 0px; opacity: 0;}
+    71% {left: 0px; opacity: 0;}
+    72% {left: -10px; opacity: 1;}
+    73% {left: 0px; opacity: 0;}
+    100% {left: 0px; opacity: 0;}
+}
+
+/* Thank god, it's over */
+
 body {
     margin: 0;
     background-color: #1e1e1e;
@@ -56,13 +86,38 @@ a:hover {
 }
 
 .imgblock {
-    width: 200px;
-    height: 200px;
-    border-radius: 100%;
+    width: 100%;
     display: block;
-    box-shadow: 0px 0px 10px rgba(255,255,255,0.2);
-    margin: 10px auto 25px auto;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 5px auto 15px auto;
+    padding: 15px;
     box-sizing: border-box;
+}
+
+.img1, .img2 {
+    width: 100%;
+}
+
+.img1 {
+    position: relative;
+    top: -210px;
+    animation: glitch 1.25s 1s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.img2 {
+    position: relative;
+    top: -145px;
+    animation: glitch 1.5s 2s infinite reverse;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.imgblock img {
+    position: relative;
 }
 
 .blocks {
