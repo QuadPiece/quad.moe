@@ -144,6 +144,22 @@ a:hover {
     display: inline-block;
 }
 
+.masto-logo {
+    filter: grayscale(100%);
+    transition: all ease-in-out 0.1s;
+}
+
+.masto-logo:hover {
+    filter: grayscale(0%);
+    transition: all ease-in-out 0.1s;
+}
+
+.masto-logo img {
+    max-width: 80%;
+    width: 80%;
+    height: auto;
+}
+
 @media screen and (max-width: 580px) {
     .blocks a {
         width: 45%;
