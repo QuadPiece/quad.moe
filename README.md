@@ -1,2 +1,2 @@
-# quadpiece.github.io
+# quad.moe
 new website lol
